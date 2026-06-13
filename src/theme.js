@@ -132,6 +132,9 @@ function getTheme({ theme, name }) {
       "pickerGroup.foreground": color.fg.muted,
       "quickInput.background" : color.canvas.overlay,
       "quickInput.foreground" : color.fg.default,
+      // purplish: selected row in the Command Palette / Quick Open uses a subtle purple instead of blue
+      "quickInputList.focusBackground": alpha("#8345ff", 0.2),
+      "quickInputList.focusForeground": color.fg.default,
 
       "statusBar.foreground"             : color.fg.muted,
       "statusBar.background"             : color.canvas.default,
