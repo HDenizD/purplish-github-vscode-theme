@@ -13,7 +13,9 @@ const { getColors } = require("./colors");
 
 function getTheme({ theme, name }) {
 
-  const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dark_dimmed: "royalblue" })
+  // "dark_purple" inherits every dark-specific decision; only the color values (from getColors) differ.
+  const baseTheme = theme === "dark_purple" ? "dark" : theme;
+  const themes = (options) => options[baseTheme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dark_dimmed: "royalblue" })
   const rawColors = getColors(theme)
   const color = changeColorToHexAlphas(rawColors)
   const scale = color.scale; // Usage: scale.blue[6]
