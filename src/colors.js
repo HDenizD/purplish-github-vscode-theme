@@ -34,6 +34,15 @@ function getColors(theme) {
       darkColors.done.subtle = "rgba(163, 113, 247, 0.1)";
       darkColors.sponsors.subtle = "rgba(219, 97, 162, 0.1)";
 
+      // Purplish customizations (this fork only):
+      // Primary (formerly green) buttons -> purple
+      darkColors.btn.primary.bg = "#8345ff";
+      darkColors.btn.primary.hoverBg = "#9a63ff";
+      // Editor / right-side background -> near black
+      darkColors.canvas.default = "#0d0d0d";
+      // Explorer / left sidebar -> slightly darker than the editor
+      darkColors.canvas.inset = "#080808";
+
       return darkColors;
     case "dark_high_contrast":
       return darkHighContrastColors;
