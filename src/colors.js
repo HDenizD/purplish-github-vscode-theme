@@ -12,11 +12,15 @@ function getColors(theme) {
     case "light":
 
       // Temp override until Primitives are updated
-      lightColors.success.emphasis = "#1f883d";
-      lightColors.btn.primary.bg = lightColors.success.emphasis;
-      lightColors.btn.primary.hoverBg = lightColors.scale.green[5];
       lightColors.fg.default = "#1f2328";
       lightColors.fg.muted = "#656d76";
+
+      // Purplish customizations (this fork) — same accents as the dark theme:
+      // Primary (formerly green) buttons -> purple
+      lightColors.btn.primary.bg = "#8345ff";
+      lightColors.btn.primary.hoverBg = "#7437e8";
+      // Uncommitted files (untracked + added git decorations) -> coral instead of green
+      lightColors.success.fg = "#f78166";
 
       return lightColors;
     case "light_high_contrast":

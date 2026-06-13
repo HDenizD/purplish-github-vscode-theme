@@ -5,6 +5,7 @@
 .gitignore
 node_modules/**
 package-lock.json
+scripts/**
 src/**
 build/**
 *.vsix
