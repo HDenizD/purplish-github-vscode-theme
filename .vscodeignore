@@ -1,9 +1,10 @@
 .vscode/**
 .vscode-test/**
-.changeset/
-.github/
+.changeset/**
+.github/**
 .gitignore
-/node_modules/
-/package-lock.json
-/src/
-/build/
+node_modules/**
+package-lock.json
+src/**
+build/**
+*.vsix
