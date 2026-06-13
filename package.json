@@ -55,8 +55,8 @@
   },
   "scripts": {
     "start": "nodemon --watch src src/index.js",
-    "build": "node src/index.js && mkdir -p build",
-    "package": "vsce package -o ./build/purplish-github-vscode-theme.vsix",
+    "build": "node src/index.js",
+    "package": "node -e \"require('fs').mkdirSync('build',{recursive:true})\" && vsce package -o ./build/purplish-github-vscode-theme.vsix",
     "prepublishOnly": "npm run build && vsce publish",
     "release": "changeset publish"
   },
