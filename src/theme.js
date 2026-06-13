@@ -196,10 +196,6 @@ function getTheme({ theme, name }) {
       "editor.wordHighlightStrongBorder"      : alpha(color.neutral.muted, 0.6),
       "editorBracketMatch.background"         : alpha(scale.green[3], 0.25),
       "editorBracketMatch.border"             : alpha(scale.green[3], 0.6),
-      // text selection for High Contrast themes
-      "editor.selectionForeground"            : onlyHighContrast(color.fg.onEmphasis),
-      "editor.selectionBackground"            : onlyHighContrast(color.neutral.emphasisPlus),
-      "editor.inactiveSelectionBackground"    : onlyHighContrast(color.neutral.emphasis),
 
       "editorInlayHint.background": alpha(scale.gray[3], 0.2),
       "editorInlayHint.foreground": color.fg.muted,
@@ -324,7 +320,7 @@ function getTheme({ theme, name }) {
       "peekViewEditor.matchHighlightBackground": onlyDark(color.attention.muted),
       "peekViewResult.matchHighlightBackground": onlyDark(color.attention.muted),
       "peekViewEditor.background"              : onlyDark(color.neutral.subtle),
-      "peekViewResult.background"              : onlyDark(scale.gray[9]),
+      "peekViewResult.background"              : onlyDark("#080808"),
 
       "settings.headerForeground"        : color.fg.default,
       "settings.modifiedItemIndicator"   : color.attention.muted,

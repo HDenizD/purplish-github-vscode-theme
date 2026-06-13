@@ -21,6 +21,10 @@ function getColors(theme) {
       lightColors.btn.primary.hoverBg = "#7437e8";
       // Uncommitted files (untracked + added git decorations) -> coral instead of green
       lightColors.success.fg = "#f78166";
+      // Blue UI accents -> purple (same set as the dark theme)
+      lightColors.accent.fg = "#8345ff";
+      lightColors.accent.emphasis = "#8345ff";
+      lightColors.accent.subtle = "#efe7ff";
 
       return lightColors;
     case "light_high_contrast":
@@ -32,7 +36,6 @@ function getColors(theme) {
       // Temp override until Primitives are updated
       darkColors.fg.default = "#e6edf3";
       darkColors.fg.muted = "#7d8590";
-      darkColors.accent.fg = "#2f81f7";
       darkColors.severe.subtle = "rgba(219, 109, 40, 0.1)";
       darkColors.danger.subtle = "rgba(248, 81, 73, 0.1)";
       darkColors.done.subtle = "rgba(163, 113, 247, 0.1)";
@@ -51,6 +54,11 @@ function getColors(theme) {
       darkColors.canvas.subtle = "#0d0d0d";
       // Uncommitted files (untracked + added git decorations) -> coral instead of green
       darkColors.success.fg = "#f78166";
+      // Blue UI accents -> purple (badges, progress bar, links, list focus,
+      // matched-text highlight, text cursor, text selection, status focus, ...)
+      darkColors.accent.fg = "#a371f7";
+      darkColors.accent.emphasis = "#8345ff";
+      darkColors.accent.subtle = "rgba(131, 69, 255, 0.15)";
 
       return darkColors;
     case "dark_high_contrast":
