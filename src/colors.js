@@ -42,6 +42,8 @@ function getColors(theme) {
       darkColors.canvas.default = "#0d0d0d";
       // Explorer / left sidebar -> slightly darker than the editor
       darkColors.canvas.inset = "#080808";
+      // Uncommitted files (untracked + added git decorations) -> coral instead of green
+      darkColors.success.fg = "#f78166";
 
       return darkColors;
     case "dark_high_contrast":

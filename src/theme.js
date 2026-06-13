@@ -41,7 +41,7 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
-      focusBorder          : color.accent.emphasis,
+      focusBorder          : themes({ light: color.accent.emphasis, light_high_contrast: color.accent.emphasis, light_colorblind: color.accent.emphasis, dark: "#8345ff", dark_high_contrast: color.accent.emphasis, dark_colorblind: color.accent.emphasis, dark_dimmed: color.accent.emphasis }),
       foreground           : color.fg.default,
       descriptionForeground: color.fg.muted,
       errorForeground      : color.danger.fg,
