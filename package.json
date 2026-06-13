@@ -49,7 +49,7 @@
         "path": "./themes/light-colorblind.json"
       },
       {
-        "label": "GitHub Dark Default",
+        "label": "Purplish GitHub Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
       },

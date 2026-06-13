@@ -19,7 +19,7 @@ const lightColorblindTheme = getTheme({
 
 const darkDefaultTheme = getTheme({
   theme: "dark",
-  name: "GitHub Dark Default",
+  name: "Purplish GitHub Dark",
 });
 
 const darkHighContrastTheme = getTheme({
