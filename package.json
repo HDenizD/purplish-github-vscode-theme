@@ -2,12 +2,12 @@
   "name": "purplish-github-theme",
   "displayName": "Purplish — GitHub Dark & Light",
   "description": "A more purple variant of the GitHub theme for VS Code",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "dederezzed",
   "license": "MIT",
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#130f1c",
+    "color": "#1b1f23",
     "theme": "dark"
   },
   "repository": {

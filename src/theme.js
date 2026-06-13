@@ -320,7 +320,7 @@ function getTheme({ theme, name }) {
       "peekViewEditor.matchHighlightBackground": onlyDark(color.attention.muted),
       "peekViewResult.matchHighlightBackground": onlyDark(color.attention.muted),
       "peekViewEditor.background"              : onlyDark(color.neutral.subtle),
-      "peekViewResult.background"              : onlyDark(color.canvas.inset),
+      "peekViewResult.background"              : onlyDark("#080808"),
 
       "settings.headerForeground"        : color.fg.default,
       "settings.modifiedItemIndicator"   : color.attention.muted,

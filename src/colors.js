@@ -45,13 +45,13 @@ function getColors(theme) {
       // Primary (formerly green) buttons -> purple
       darkColors.btn.primary.bg = "#8345ff";
       darkColors.btn.primary.hoverBg = "#9a63ff";
-      // Editor / right-side background -> dark aubergine (purple-tinted)
-      darkColors.canvas.default = "#130f1c";
-      // Explorer / left sidebar -> darker shade of the same purple
-      darkColors.canvas.inset = "#0d0a14";
-      // Overlays/popups (dropdowns, Command Palette, widgets, notifications) -> slightly lighter shade for lift
-      darkColors.canvas.overlay = "#1a1525";
-      darkColors.canvas.subtle = "#1a1525";
+      // Editor / right-side background -> near black
+      darkColors.canvas.default = "#0d0d0d";
+      // Explorer / left sidebar -> slightly darker than the editor
+      darkColors.canvas.inset = "#080808";
+      // Overlays/popups (dropdowns, Command Palette, widgets, notifications) -> match the dark surface
+      darkColors.canvas.overlay = "#0d0d0d";
+      darkColors.canvas.subtle = "#0d0d0d";
       // Uncommitted files (untracked + added git decorations) -> coral instead of green
       darkColors.success.fg = "#f78166";
       // Blue UI accents -> purple (badges, progress bar, links, list focus,
