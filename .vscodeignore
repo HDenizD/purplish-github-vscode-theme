@@ -6,6 +6,7 @@
 node_modules/**
 package-lock.json
 scripts/**
+images/**
 src/**
 build/**
 *.vsix
